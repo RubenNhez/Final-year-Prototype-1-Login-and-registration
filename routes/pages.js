@@ -2,7 +2,7 @@ const express = require("express")
 const router = express.Router();
 
 router.get("/", (req,res)=> {
-    res.send("index");
+    res.sendFile("index.html", {root: "./public"});
 })
 router.get("/register", (req,res)=> {
     res.sendFile("register.html", {root: "./public"});
