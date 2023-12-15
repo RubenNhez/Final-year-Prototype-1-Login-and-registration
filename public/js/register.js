@@ -1,6 +1,4 @@
-const { error } = require("console")
-
-format.addEventListner("submit", () => {
+form.addEventListener("submit", () => {
     const register = {
         email: email.value,
         password: password.value
